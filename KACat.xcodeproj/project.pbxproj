@@ -134,6 +134,7 @@
 		FF45E98722A1135E0054C4BA /* ClassM.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E96A22A1135D0054C4BA /* ClassM.m */; };
 		FF45E98822A1135E0054C4BA /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E96C22A1135D0054C4BA /* BaseNavigationController.m */; };
 		FF45E98922A1135E0054C4BA /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E96D22A1135D0054C4BA /* MainTabBarController.m */; };
+		FF8234BC22A4CD8900D5E4D5 /* AppUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8234BA22A4CD8900D5E4D5 /* AppUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -395,6 +396,9 @@
 		FF45E96D22A1135D0054C4BA /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		FF45E96E22A1135D0054C4BA /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		FF45E96F22A1135D0054C4BA /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		FF8234B922A4CD8900D5E4D5 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		FF8234BA22A4CD8900D5E4D5 /* AppUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUserInfo.m; sourceTree = "<group>"; };
+		FF8234BB22A4CD8900D5E4D5 /* AppUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUserInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -896,23 +900,23 @@
 			isa = PBXGroup;
 			children = (
 				FF45E8D122A113390054C4BA /* UIViewController+SlideFromSide.h */,
-				FF45E8D222A113390054C4BA /* NSString+Category.h */,
-				FF45E8D322A113390054C4BA /* NSDate+Category.m */,
-				FF45E8D422A113390054C4BA /* UITableView+Category.m */,
-				FF45E8D522A113390054C4BA /* UIView+Frame.m */,
-				FF45E8D622A113390054C4BA /* UIButton+Category.m */,
-				FF45E8D722A113390054C4BA /* UIViewController+Extension.m */,
-				FF45E8D822A113390054C4BA /* UIColor+Category.h */,
-				FF45E8D922A113390054C4BA /* NSString+Predicate.h */,
-				FF45E8DA22A113390054C4BA /* NSDate+Category.h */,
-				FF45E8DB22A113390054C4BA /* NSString+Category.m */,
 				FF45E8DC22A113390054C4BA /* UIViewController+SlideFromSide.m */,
+				FF45E8D222A113390054C4BA /* NSString+Category.h */,
+				FF45E8DB22A113390054C4BA /* NSString+Category.m */,
+				FF45E8DA22A113390054C4BA /* NSDate+Category.h */,
+				FF45E8D322A113390054C4BA /* NSDate+Category.m */,
 				FF45E8DD22A113390054C4BA /* UITableView+Category.h */,
+				FF45E8D422A113390054C4BA /* UITableView+Category.m */,
+				FF45E8E222A113390054C4BA /* UIView+Frame.h */,
+				FF45E8D522A113390054C4BA /* UIView+Frame.m */,
+				FF45E8E122A113390054C4BA /* UIViewController+Extension.h */,
+				FF45E8D722A113390054C4BA /* UIViewController+Extension.m */,
+				FF45E8D922A113390054C4BA /* NSString+Predicate.h */,
 				FF45E8DE22A113390054C4BA /* NSString+Predicate.m */,
+				FF45E8D822A113390054C4BA /* UIColor+Category.h */,
 				FF45E8DF22A113390054C4BA /* UIColor+Category.m */,
 				FF45E8E022A113390054C4BA /* UIButton+Category.h */,
-				FF45E8E122A113390054C4BA /* UIViewController+Extension.h */,
-				FF45E8E222A113390054C4BA /* UIView+Frame.h */,
+				FF45E8D622A113390054C4BA /* UIButton+Category.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -920,6 +924,9 @@
 		FF45E8E322A113390054C4BA /* User */ = {
 			isa = PBXGroup;
 			children = (
+				FF8234B922A4CD8900D5E4D5 /* Singleton.h */,
+				FF8234BB22A4CD8900D5E4D5 /* AppUserInfo.h */,
+				FF8234BA22A4CD8900D5E4D5 /* AppUserInfo.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -932,8 +939,6 @@
 				FF45E8EB22A113390054C4BA /* DataPicker */,
 				FF45E8F022A113390054C4BA /* SQTextHandle */,
 				FF45E8F822A113390054C4BA /* Cell */,
-				FF45E8FC22A113390054C4BA /* AlertLibrary */,
-				FF45E8FD22A113390054C4BA /* ArrowCell */,
 			);
 			path = Useful;
 			sourceTree = "<group>";
@@ -950,8 +955,8 @@
 		FF45E8E822A113390054C4BA /* SelectAlert */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E8E922A113390054C4BA /* SelectAlert.m */,
 				FF45E8EA22A113390054C4BA /* SelectAlert.h */,
+				FF45E8E922A113390054C4BA /* SelectAlert.m */,
 			);
 			path = SelectAlert;
 			sourceTree = "<group>";
@@ -959,10 +964,10 @@
 		FF45E8EB22A113390054C4BA /* DataPicker */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E8EC22A113390054C4BA /* UITextFieldDatePicker.m */,
-				FF45E8ED22A113390054C4BA /* UITextFieldPicker.m */,
-				FF45E8EE22A113390054C4BA /* UITextFieldPicker.h */,
 				FF45E8EF22A113390054C4BA /* UITextFieldDatePicker.h */,
+				FF45E8EC22A113390054C4BA /* UITextFieldDatePicker.m */,
+				FF45E8EE22A113390054C4BA /* UITextFieldPicker.h */,
+				FF45E8ED22A113390054C4BA /* UITextFieldPicker.m */,
 			);
 			path = DataPicker;
 			sourceTree = "<group>";
@@ -971,12 +976,12 @@
 			isa = PBXGroup;
 			children = (
 				FF45E8F122A113390054C4BA /* LimitInput.h */,
+				FF45E8F422A113390054C4BA /* LimitInput.m */,
+				FF45E8F722A113390054C4BA /* SQTextField.h */,
 				FF45E8F222A113390054C4BA /* SQTextField.m */,
 				FF45E8F322A113390054C4BA /* FSTextView.h */,
-				FF45E8F422A113390054C4BA /* LimitInput.m */,
-				FF45E8F522A113390054C4BA /* SQTextHandle.h */,
 				FF45E8F622A113390054C4BA /* FSTextView.m */,
-				FF45E8F722A113390054C4BA /* SQTextField.h */,
+				FF45E8F522A113390054C4BA /* SQTextHandle.h */,
 			);
 			path = SQTextHandle;
 			sourceTree = "<group>";
@@ -984,25 +989,11 @@
 		FF45E8F822A113390054C4BA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				FF45E8FB22A113390054C4BA /* UITextViewCell.h */,
 				FF45E8F922A113390054C4BA /* UITextViewCell.m */,
 				FF45E8FA22A113390054C4BA /* UITextViewCell.xib */,
-				FF45E8FB22A113390054C4BA /* UITextViewCell.h */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		FF45E8FC22A113390054C4BA /* AlertLibrary */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AlertLibrary;
-			sourceTree = "<group>";
-		};
-		FF45E8FD22A113390054C4BA /* ArrowCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ArrowCell;
 			sourceTree = "<group>";
 		};
 		FF45E8FE22A113390054C4BA /* Helper */ = {
@@ -1038,11 +1029,11 @@
 		FF45E92122A1133D0054C4BA /* NetWorkManager */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E92222A1133D0054C4BA /* NetWorkManager.h */,
-				FF45E92322A1133E0054C4BA /* NetWorkHelper.m */,
 				FF45E92422A1133E0054C4BA /* NetAPI.h */,
+				FF45E92222A1133D0054C4BA /* NetWorkManager.h */,
 				FF45E92522A1133E0054C4BA /* NetWorkManager.m */,
 				FF45E92622A1133E0054C4BA /* NetWorkHelper.h */,
+				FF45E92322A1133E0054C4BA /* NetWorkHelper.m */,
 			);
 			path = NetWorkManager;
 			sourceTree = "<group>";
@@ -1050,9 +1041,9 @@
 		FF45E92722A1133E0054C4BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF45E92A22A1133E0054C4BA /* JSONModel.h */,
 				FF45E92822A1133E0054C4BA /* JSONModel.m */,
 				FF45E92922A1133E0054C4BA /* CommonM.h */,
-				FF45E92A22A1133E0054C4BA /* JSONModel.h */,
 				FF45E92B22A1133E0054C4BA /* CommonM.m */,
 			);
 			path = Model;
@@ -1457,6 +1448,7 @@
 				FF45E91622A113390054C4BA /* UITextFieldPicker.m in Sources */,
 				FF45E91122A113390054C4BA /* NSString+Predicate.m in Sources */,
 				FF45E88A22A113300054C4BA /* HBDNavigationBar.m in Sources */,
+				FF8234BC22A4CD8900D5E4D5 /* AppUserInfo.m in Sources */,
 				FF45E89122A113300054C4BA /* NSArray+MASAdditions.m in Sources */,
 				FF45E97522A1135E0054C4BA /* AccountAddTypeViewController.m in Sources */,
 				FF45E92F22A1133E0054C4BA /* CommonM.m in Sources */,

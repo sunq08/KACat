@@ -9,6 +9,8 @@
 #import "JSONModel.h"
 
 @interface CommonM : JSONModel
-@property (nonatomic , assign) NSInteger     code;
+@property (nonatomic , assign) NSInteger    code;
 @property (nonatomic , strong) NSString     *msg;
+@property (nonatomic , assign) BOOL         success;
+@property (nonatomic , strong) id           ext;
 @end

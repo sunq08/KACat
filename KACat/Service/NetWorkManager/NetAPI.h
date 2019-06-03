@@ -6,14 +6,11 @@
 //  Copyright © 2017年 SunQ. All rights reserved.
 //
 
-// URL
-#define URL_Http @"http://"
+#define NETSUCCESS      0
+#define NETUNLOGIN      50002
+#define NETEMPTYDATA    90002     //数据为空
 
-#define Re_Success 200
-#define Re_NotLogin 302
-
-#define URL_Base @"www.hqrrm.com/" //线上环境
-
-
+//#define URL_Base @"http://www.hqrrm.com/" //线上环境
+#define URL_Base @"http://192.168.0.188:39032/" //测试环境
 /*****************************登录模块*********************************/
-#define URL_Login           @"app/loginmgr/loginenter"                    //登录
+#define URL_Login           @"api/loginmember/loginenter"                    //登录

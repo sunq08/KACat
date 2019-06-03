@@ -10,26 +10,42 @@
 
 @interface UIView (Frame)
 
-/**控件左上角 x 坐标*/
+/**  起点x坐标  */
 @property (nonatomic, assign) CGFloat x;
-/**控件左上角 y 坐标*/
+/**  起点y坐标  */
 @property (nonatomic, assign) CGFloat y;
-/**控件的中心点 x 坐标*/
+/**  中心点x坐标  */
 @property (nonatomic, assign) CGFloat centerX;
-/**控件的中心点 y 坐标*/
+/**  中心点y坐标  */
 @property (nonatomic, assign) CGFloat centerY;
-/**控件的宽度*/
+/**  宽度  */
 @property (nonatomic, assign) CGFloat width;
-/**控件高度*/
+/**  高度  */
 @property (nonatomic, assign) CGFloat height;
-/**控件底部*/
-@property (nonatomic) CGFloat bottom;
+/**  顶部  */
+@property (nonatomic, assign) CGFloat top;
+/**  底部  */
+@property (nonatomic, assign) CGFloat bottom;
+/**  左边  */
+@property (nonatomic, assign) CGFloat left;
+/**  右边  */
+@property (nonatomic, assign) CGFloat right;
+/**  size  */
+@property (nonatomic, assign) CGSize size;
+/**  origin */
+@property (nonatomic, assign) CGPoint origin;
 
 /**配置圆角 */
--(void)layoutRadius:(CGFloat)radius;
+-(void)layoutRadius:(CGFloat)cornerRadius;
+/**给哪几个角设置圆角 */
+-(void)layoutRadius:(CGFloat)cornerRadius RectCorners:(UIRectCorner)rectCorner;
 /**配置圆角边框 */
--(void)layoutBorderRadius:(CGFloat)radius color:(UIColor *)color width:(CGFloat)width;
+-(void)layoutBorderRadius:(CGFloat)cornerRadius color:(UIColor *)color width:(CGFloat)width;
+/**设置阴影 */
+-(void)layoutShadow:(UIColor *)shadowColor opacity:(CGFloat)opacity radius:(CGFloat)radius offset:(CGSize)offset;
 
+/**获取controller*/
+- (UIViewController *)viewController;
 /**加载xib 创建的 View*/
 + (instancetype)viewFromXib;
 @end

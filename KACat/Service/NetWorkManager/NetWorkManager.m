@@ -24,7 +24,7 @@ static NSMutableArray *_allSessionTask;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSString *urlStr = [NSString stringWithFormat:@"%@%@",URL_Http,URL_Base];
+        NSString *urlStr = [NSString stringWithFormat:@"%@",URL_Base];
         manager = [[self alloc]initWithBaseURL:[NSURL URLWithString:urlStr]];
     });
     return manager;

@@ -25,6 +25,7 @@
 #import "NSString+Category.h"
 #import "UIViewController+Extension.h"
 #import "UIViewController+HBD.h"
+#import "AppUserInfo.h"
 
 #import "Masonry.h"
 #import "DataBase.h"

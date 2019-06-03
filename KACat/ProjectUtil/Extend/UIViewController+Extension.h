@@ -16,42 +16,19 @@ typedef void (^AlertCallBackBlock)(void);//回调block
 
 @interface UIViewController (Extension)
 
-/**
- 从xib中加载控制器
- 
- */
+///从xib中加载控制器
 + (instancetype)viewControllerFromNib;
 
-/**
- 从 storyboard 加载ViewController
-
- @param storyboardName storyboard  名字
- @param identifier 这个类的 storyboard ID（自己设置）
-
- */
+///从 storyboard 加载ViewController
 + (instancetype)viewControllerFromStoryboardName:(NSString *)storyboardName Identifier:(NSString *)identifier;
 
-/**
- 快速创建Alert 提示
-
- @param message 提示信息
- */
+///快速创建Alert 提示
 - (void)showAlertMessage:(NSString *)message;
 
-/**
- 简易Alert窗口，单一按钮，支持点击按钮回调
- 
- @param message 提示信息
- @param completion 回调内容
- */
+///简易Alert窗口，单一按钮，支持点击按钮回调
 - (void)showAlertMessage:(NSString *)message completion:(AlertCallBackBlock)completion;
 
-/**
- 简易Alert窗口，确认和取消按钮，支持点击按钮回调(index:0确定，1取消)
- 
- @param message 提示信息
- @param completion 回调内容
- */
+///简易Alert窗口，确认和取消按钮，支持点击按钮回调(index:0确定，1取消)
 - (void)showAlertWithCancel:(NSString *)message completion:(AlertCallBackBlock)completion;
 
 @end
