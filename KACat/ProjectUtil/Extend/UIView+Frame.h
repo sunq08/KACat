@@ -48,4 +48,9 @@
 - (UIViewController *)viewController;
 /**加载xib 创建的 View*/
 + (instancetype)viewFromXib;
+
+#pragma mark - 背景后退动画效果
+- (void)backGroundAnimationShow;
+
+- (void)backGroundAnimationHide;
 @end

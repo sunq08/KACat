@@ -9,6 +9,9 @@
 
 #import <UIKit/UIKit.h>
 
+/** 功能:快速实现format*/
+NSString * format(NSString *format, ...);
+
 @interface NSString (Category)
 
 /** 电话号码中间4位*显示 */
@@ -16,9 +19,6 @@
 
 /** 银行卡号中间8位*显示 */
 + (NSString*) getSecrectStringWithAccountNo:(NSString*)accountNo;
-
-/** 后四位用*显示 */
-+ (NSString*) getLastFourSecrectWithString:(NSString*)string;
 
 /** 添加数字的千位符 */
 + (NSString*) countNumAndChangeformat:(NSString *)num;
@@ -35,18 +35,18 @@
 /** 抹除小数末尾的0 */
 - (NSString*) removeUnwantedZero;
 
+/** 取出所有空格 */
+- (NSString *)allTrimmedString;
+
 /** 去掉前后空格 */
 - (NSString*) trimmedString;
 
-/**  千分位转换*/
-+ (NSString *)positiveStringFormat:(NSString *)text;
-/**  千分位转换*/
-+ (NSString *)positiveCGFloatFormat:(CGFloat)text;
-
 /** 截取字符串，判空，判断长度 */
-+ (NSString *)subString:(NSString *)string length:(NSInteger)length;
+- (NSString *)subStringWithlength:(NSInteger)length;
 
 /** 解决精度丢失问题 */
-+ (NSString *)reviseString:(NSString *)str;
+- (NSString *)reviseString;
 
+
++ (NSString *)toJSONStringForDictionary:(NSMutableDictionary *)dict;
 @end

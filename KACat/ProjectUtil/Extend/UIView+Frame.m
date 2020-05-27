@@ -189,4 +189,35 @@
     return  nil;
 }
 
+#pragma mark - 背景后退动画效果
+//后退动画效果
+- (void)backGroundAnimationShow{
+    [UIView animateWithDuration:0.3 animations:^{
+        CALayer *layer = self.layer;
+        layer.zPosition = -4000;
+        CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+        rotationAndPerspectiveTransform.m34 = 1.0 / -500;
+        layer.transform = CATransform3DRotate(rotationAndPerspectiveTransform, 6.0f * M_PI / 180.0f, 1.0f, 0.0f, 0.0f);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.3 animations:^{
+            self.transform = CGAffineTransformMakeScale(0.9, 0.94);
+        }];
+    }];
+}
+
+//复原动画效果
+- (void)backGroundAnimationHide{
+    [UIView animateWithDuration:0.3 animations:^{
+        CALayer *layer = self.layer;
+        layer.zPosition = -4000;
+        CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+        rotationAndPerspectiveTransform.m34 = 1.0 / 500;
+        layer.transform = CATransform3DRotate(rotationAndPerspectiveTransform, -6.0f * M_PI / 180.0f, 1.0f, 0.0f, 0.0f);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.3 animations:^{
+            self.transform = CGAffineTransformMakeScale(1.0, 1.0);
+        }];
+    }];
+}
+
 @end

@@ -47,7 +47,7 @@
 }
 
 /**
- 简易Alert窗口，确认和取消按钮，支持点击按钮回调(index:0确定，1取消)
+ 简易Alert窗口，确认和取消按钮，支持点击确定按钮回调
  
  @param message 提示信息
  @param completion 回调内容
@@ -64,5 +64,28 @@
     [alertController addAction:singleAction];
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
+/** 简易ActionSheet窗口*/
+- (void)showActionSheetMessage:(NSString *)message items:(NSArray *)items completion:(AlertIndexCallBackBlock)completion{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    for (int i = 0; i<items.count; i++) {
+        [alertController addAction:[UIAlertAction actionWithTitle:items[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if (completion) {
+                completion(i);
+            }
+        }]];
+    }
+    //添加取消选项
+    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [alertController dismissViewControllerAnimated:YES completion:^{
+            if (completion) {
+                completion(-1);
+            }
+        }];
+    }]];
+    //显示alertController
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
 
 @end

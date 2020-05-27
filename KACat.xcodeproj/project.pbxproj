@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41752B84247DF8F800083B58 /* UITextView+YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41752B83247DF8F800083B58 /* UITextView+YLTextView.m */; };
+		41752B86247DF95600083B58 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41752B85247DF95600083B58 /* logo.png */; };
+		41752B88247DF98600083B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41752B87247DF98600083B58 /* LaunchScreen.storyboard */; };
 		4324292A12623B413AAB3742 /* libPods-KACat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8957BE17AC29DEF19399EB6 /* libPods-KACat.a */; };
 		FF45E75D22A110EB0054C4BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E75C22A110EB0054C4BA /* AppDelegate.m */; };
 		FF45E76522A110F40054C4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF45E76422A110F40054C4BA /* Assets.xcassets */; };
@@ -30,39 +33,6 @@
 		FF45E89322A113300054C4BA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E80322A113300054C4BA /* MASConstraint.m */; };
 		FF45E89422A113300054C4BA /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E80522A113300054C4BA /* MASViewConstraint.m */; };
 		FF45E89522A113300054C4BA /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E80622A113300054C4BA /* MASViewAttribute.m */; };
-		FF45E89622A113300054C4BA /* ZFGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E80A22A113300054C4BA /* ZFGenericChart.m */; };
-		FF45E89722A113300054C4BA /* ZFBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E80E22A113300054C4BA /* ZFBarChart.m */; };
-		FF45E89822A113300054C4BA /* ZFBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E80F22A113300054C4BA /* ZFBar.m */; };
-		FF45E89922A113300054C4BA /* UIView+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81122A113300054C4BA /* UIView+Zirkfied.m */; };
-		FF45E89A22A113300054C4BA /* UIBezierPath+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81322A113300054C4BA /* UIBezierPath+Zirkfied.m */; };
-		FF45E89B22A113300054C4BA /* UIColor+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81722A113300054C4BA /* UIColor+Zirkfied.m */; };
-		FF45E89C22A113300054C4BA /* NSString+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81922A113300054C4BA /* NSString+Zirkfied.m */; };
-		FF45E89D22A113300054C4BA /* NSNumber+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81A22A113300054C4BA /* NSNumber+Zirkfied.m */; };
-		FF45E89E22A113300054C4BA /* ZFCirqueChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81D22A113300054C4BA /* ZFCirqueChart.m */; };
-		FF45E89F22A113300054C4BA /* ZFCirque.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E81F22A113300054C4BA /* ZFCirque.m */; };
-		FF45E8A022A113300054C4BA /* ZFHorizontalAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E82122A113300054C4BA /* ZFHorizontalAxis.m */; };
-		FF45E8A122A113300054C4BA /* ZFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E82522A113300054C4BA /* ZFConst.m */; };
-		FF45E8A222A113300054C4BA /* ZFMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E82922A113300054C4BA /* ZFMethod.m */; };
-		FF45E8A322A113300054C4BA /* ZFPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E82B22A113300054C4BA /* ZFPieChart.m */; };
-		FF45E8A422A113300054C4BA /* ZFPie.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E82F22A113300054C4BA /* ZFPie.m */; };
-		FF45E8A522A113300054C4BA /* ZFTranslucencePath.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83022A113300054C4BA /* ZFTranslucencePath.m */; };
-		FF45E8A622A113300054C4BA /* ZFLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83322A113300054C4BA /* ZFLineChart.m */; };
-		FF45E8A722A113300054C4BA /* ZFCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83622A113300054C4BA /* ZFCircle.m */; };
-		FF45E8A822A113300054C4BA /* ZFLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83722A113300054C4BA /* ZFLine.m */; };
-		FF45E8A922A113300054C4BA /* ZFXAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83A22A113300054C4BA /* ZFXAxisLine.m */; };
-		FF45E8AA22A113300054C4BA /* ZFYAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83B22A113300054C4BA /* ZFYAxisLine.m */; };
-		FF45E8AB22A113300054C4BA /* ZFPopoverLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83D22A113300054C4BA /* ZFPopoverLabel.m */; };
-		FF45E8AC22A113300054C4BA /* ZFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E83F22A113300054C4BA /* ZFLabel.m */; };
-		FF45E8AD22A113300054C4BA /* ZFRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E84222A113300054C4BA /* ZFRadar.m */; };
-		FF45E8AE22A113300054C4BA /* ZFPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E84322A113300054C4BA /* ZFPolygon.m */; };
-		FF45E8AF22A113300054C4BA /* ZFRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E84422A113300054C4BA /* ZFRadarChart.m */; };
-		FF45E8B022A113300054C4BA /* ZFGenericAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E84A22A113300054C4BA /* ZFGenericAxis.m */; };
-		FF45E8B122A113300054C4BA /* ZFGradientAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E84E22A113300054C4BA /* ZFGradientAttribute.m */; };
-		FF45E8B222A113300054C4BA /* ZFCurveAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E84F22A113300054C4BA /* ZFCurveAttribute.m */; };
-		FF45E8B322A113300054C4BA /* ZFWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E85322A113300054C4BA /* ZFWaveChart.m */; };
-		FF45E8B422A113300054C4BA /* ZFWave.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E85422A113300054C4BA /* ZFWave.m */; };
-		FF45E8B522A113300054C4BA /* ZFHorizontalBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E85722A113300054C4BA /* ZFHorizontalBarChart.m */; };
-		FF45E8B622A113300054C4BA /* ZFHorizontalBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E85822A113300054C4BA /* ZFHorizontalBar.m */; };
 		FF45E8B722A113300054C4BA /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E85C22A113300054C4BA /* IQTextView.m */; };
 		FF45E8B822A113300054C4BA /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E86022A113300054C4BA /* IQToolbar.m */; };
 		FF45E8B922A113300054C4BA /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E86222A113300054C4BA /* IQTitleBarButtonItem.m */; };
@@ -83,7 +53,6 @@
 		FF45E90822A113390054C4BA /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8CD22A113390054C4BA /* DataBase.m */; };
 		FF45E90922A113390054C4BA /* bills.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF45E8CE22A113390054C4BA /* bills.plist */; };
 		FF45E90A22A113390054C4BA /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8D322A113390054C4BA /* NSDate+Category.m */; };
-		FF45E90B22A113390054C4BA /* UITableView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8D422A113390054C4BA /* UITableView+Category.m */; };
 		FF45E90C22A113390054C4BA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8D522A113390054C4BA /* UIView+Frame.m */; };
 		FF45E90D22A113390054C4BA /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8D622A113390054C4BA /* UIButton+Category.m */; };
 		FF45E90E22A113390054C4BA /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8D722A113390054C4BA /* UIViewController+Extension.m */; };
@@ -91,15 +60,11 @@
 		FF45E91022A113390054C4BA /* UIViewController+SlideFromSide.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8DC22A113390054C4BA /* UIViewController+SlideFromSide.m */; };
 		FF45E91122A113390054C4BA /* NSString+Predicate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8DE22A113390054C4BA /* NSString+Predicate.m */; };
 		FF45E91222A113390054C4BA /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8DF22A113390054C4BA /* UIColor+Category.m */; };
-		FF45E91322A113390054C4BA /* RTIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8E722A113390054C4BA /* RTIconButton.m */; };
-		FF45E91422A113390054C4BA /* SelectAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8E922A113390054C4BA /* SelectAlert.m */; };
 		FF45E91522A113390054C4BA /* UITextFieldDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8EC22A113390054C4BA /* UITextFieldDatePicker.m */; };
 		FF45E91622A113390054C4BA /* UITextFieldPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8ED22A113390054C4BA /* UITextFieldPicker.m */; };
 		FF45E91722A113390054C4BA /* SQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8F222A113390054C4BA /* SQTextField.m */; };
 		FF45E91822A113390054C4BA /* LimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8F422A113390054C4BA /* LimitInput.m */; };
 		FF45E91922A113390054C4BA /* FSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8F622A113390054C4BA /* FSTextView.m */; };
-		FF45E91A22A113390054C4BA /* UITextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E8F922A113390054C4BA /* UITextViewCell.m */; };
-		FF45E91B22A113390054C4BA /* UITextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF45E8FA22A113390054C4BA /* UITextViewCell.xib */; };
 		FF45E91C22A113390054C4BA /* FileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E90022A113390054C4BA /* FileHelper.m */; };
 		FF45E91D22A113390054C4BA /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E90122A113390054C4BA /* Helper.m */; };
 		FF45E91E22A113390054C4BA /* HUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E90522A113390054C4BA /* HUDManager.m */; };
@@ -126,7 +91,6 @@
 		FF45E97F22A1135E0054C4BA /* BillListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E95822A1135D0054C4BA /* BillListTableViewCell.m */; };
 		FF45E98022A1135E0054C4BA /* BillListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF45E95922A1135D0054C4BA /* BillListTableViewCell.xib */; };
 		FF45E98122A1135E0054C4BA /* WaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E95B22A1135D0054C4BA /* WaterViewController.m */; };
-		FF45E98222A1135E0054C4BA /* WaterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF45E95C22A1135D0054C4BA /* WaterViewController.xib */; };
 		FF45E98322A1135E0054C4BA /* IClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E96022A1135D0054C4BA /* IClassListViewController.m */; };
 		FF45E98422A1135E0054C4BA /* EClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E96122A1135D0054C4BA /* EClassListViewController.m */; };
 		FF45E98522A1135E0054C4BA /* ClassDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45E96622A1135D0054C4BA /* ClassDetailViewController.m */; };
@@ -138,6 +102,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41752B82247DF8F800083B58 /* UITextView+YLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YLTextView.h"; sourceTree = "<group>"; };
+		41752B83247DF8F800083B58 /* UITextView+YLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YLTextView.m"; sourceTree = "<group>"; };
+		41752B85247DF95600083B58 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		41752B87247DF98600083B58 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C45AA0CE0B68A35D82632D /* Pods-KACat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KACat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KACat/Pods-KACat.debug.xcconfig"; sourceTree = "<group>"; };
 		E8957BE17AC29DEF19399EB6 /* libPods-KACat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KACat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0B0AF2D1BC7548A6FAAEFB /* Pods-KACat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KACat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KACat/Pods-KACat.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,74 +159,6 @@
 		FF45E80422A113300054C4BA /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		FF45E80522A113300054C4BA /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		FF45E80622A113300054C4BA /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		FF45E80922A113300054C4BA /* ZFGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericChart.h; sourceTree = "<group>"; };
-		FF45E80A22A113300054C4BA /* ZFGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericChart.m; sourceTree = "<group>"; };
-		FF45E80C22A113300054C4BA /* ZFBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBarChart.h; sourceTree = "<group>"; };
-		FF45E80D22A113300054C4BA /* ZFBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBar.h; sourceTree = "<group>"; };
-		FF45E80E22A113300054C4BA /* ZFBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBarChart.m; sourceTree = "<group>"; };
-		FF45E80F22A113300054C4BA /* ZFBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBar.m; sourceTree = "<group>"; };
-		FF45E81122A113300054C4BA /* UIView+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Zirkfied.m"; sourceTree = "<group>"; };
-		FF45E81222A113300054C4BA /* UIColor+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Zirkfied.h"; sourceTree = "<group>"; };
-		FF45E81322A113300054C4BA /* UIBezierPath+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Zirkfied.m"; sourceTree = "<group>"; };
-		FF45E81422A113300054C4BA /* NSString+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Zirkfied.h"; sourceTree = "<group>"; };
-		FF45E81522A113300054C4BA /* NSNumber+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Zirkfied.h"; sourceTree = "<group>"; };
-		FF45E81622A113300054C4BA /* UIView+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Zirkfied.h"; sourceTree = "<group>"; };
-		FF45E81722A113300054C4BA /* UIColor+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Zirkfied.m"; sourceTree = "<group>"; };
-		FF45E81822A113300054C4BA /* UIBezierPath+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Zirkfied.h"; sourceTree = "<group>"; };
-		FF45E81922A113300054C4BA /* NSString+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Zirkfied.m"; sourceTree = "<group>"; };
-		FF45E81A22A113300054C4BA /* NSNumber+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Zirkfied.m"; sourceTree = "<group>"; };
-		FF45E81C22A113300054C4BA /* ZFCirque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCirque.h; sourceTree = "<group>"; };
-		FF45E81D22A113300054C4BA /* ZFCirqueChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCirqueChart.m; sourceTree = "<group>"; };
-		FF45E81E22A113300054C4BA /* ZFCirqueChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCirqueChart.h; sourceTree = "<group>"; };
-		FF45E81F22A113300054C4BA /* ZFCirque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCirque.m; sourceTree = "<group>"; };
-		FF45E82122A113300054C4BA /* ZFHorizontalAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalAxis.m; sourceTree = "<group>"; };
-		FF45E82222A113300054C4BA /* ZFHorizontalAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalAxis.h; sourceTree = "<group>"; };
-		FF45E82422A113300054C4BA /* ZFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFColor.h; sourceTree = "<group>"; };
-		FF45E82522A113300054C4BA /* ZFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFConst.m; sourceTree = "<group>"; };
-		FF45E82622A113300054C4BA /* ZFChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFChart.h; sourceTree = "<group>"; };
-		FF45E82722A113300054C4BA /* ZFMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMethod.h; sourceTree = "<group>"; };
-		FF45E82822A113300054C4BA /* ZFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFConst.h; sourceTree = "<group>"; };
-		FF45E82922A113300054C4BA /* ZFMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMethod.m; sourceTree = "<group>"; };
-		FF45E82B22A113300054C4BA /* ZFPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPieChart.m; sourceTree = "<group>"; };
-		FF45E82C22A113300054C4BA /* ZFPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPie.h; sourceTree = "<group>"; };
-		FF45E82D22A113300054C4BA /* ZFTranslucencePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTranslucencePath.h; sourceTree = "<group>"; };
-		FF45E82E22A113300054C4BA /* ZFPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPieChart.h; sourceTree = "<group>"; };
-		FF45E82F22A113300054C4BA /* ZFPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPie.m; sourceTree = "<group>"; };
-		FF45E83022A113300054C4BA /* ZFTranslucencePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTranslucencePath.m; sourceTree = "<group>"; };
-		FF45E83222A113300054C4BA /* ZFCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCircle.h; sourceTree = "<group>"; };
-		FF45E83322A113300054C4BA /* ZFLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLineChart.m; sourceTree = "<group>"; };
-		FF45E83422A113300054C4BA /* ZFLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLine.h; sourceTree = "<group>"; };
-		FF45E83522A113300054C4BA /* ZFLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLineChart.h; sourceTree = "<group>"; };
-		FF45E83622A113300054C4BA /* ZFCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCircle.m; sourceTree = "<group>"; };
-		FF45E83722A113300054C4BA /* ZFLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLine.m; sourceTree = "<group>"; };
-		FF45E83922A113300054C4BA /* ZFPopoverLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPopoverLabel.h; sourceTree = "<group>"; };
-		FF45E83A22A113300054C4BA /* ZFXAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFXAxisLine.m; sourceTree = "<group>"; };
-		FF45E83B22A113300054C4BA /* ZFYAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFYAxisLine.m; sourceTree = "<group>"; };
-		FF45E83C22A113300054C4BA /* ZFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLabel.h; sourceTree = "<group>"; };
-		FF45E83D22A113300054C4BA /* ZFPopoverLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPopoverLabel.m; sourceTree = "<group>"; };
-		FF45E83E22A113300054C4BA /* ZFXAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFXAxisLine.h; sourceTree = "<group>"; };
-		FF45E83F22A113300054C4BA /* ZFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLabel.m; sourceTree = "<group>"; };
-		FF45E84022A113300054C4BA /* ZFYAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFYAxisLine.h; sourceTree = "<group>"; };
-		FF45E84222A113300054C4BA /* ZFRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRadar.m; sourceTree = "<group>"; };
-		FF45E84322A113300054C4BA /* ZFPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPolygon.m; sourceTree = "<group>"; };
-		FF45E84422A113300054C4BA /* ZFRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRadarChart.m; sourceTree = "<group>"; };
-		FF45E84522A113300054C4BA /* ZFRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRadar.h; sourceTree = "<group>"; };
-		FF45E84622A113300054C4BA /* ZFPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPolygon.h; sourceTree = "<group>"; };
-		FF45E84722A113300054C4BA /* ZFRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRadarChart.h; sourceTree = "<group>"; };
-		FF45E84922A113300054C4BA /* ZFGenericAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericAxis.h; sourceTree = "<group>"; };
-		FF45E84A22A113300054C4BA /* ZFGenericAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericAxis.m; sourceTree = "<group>"; };
-		FF45E84C22A113300054C4BA /* ZFGradientAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGradientAttribute.h; sourceTree = "<group>"; };
-		FF45E84D22A113300054C4BA /* ZFCurveAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCurveAttribute.h; sourceTree = "<group>"; };
-		FF45E84E22A113300054C4BA /* ZFGradientAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGradientAttribute.m; sourceTree = "<group>"; };
-		FF45E84F22A113300054C4BA /* ZFCurveAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCurveAttribute.m; sourceTree = "<group>"; };
-		FF45E85122A113300054C4BA /* ZFWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWaveChart.h; sourceTree = "<group>"; };
-		FF45E85222A113300054C4BA /* ZFWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWave.h; sourceTree = "<group>"; };
-		FF45E85322A113300054C4BA /* ZFWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWaveChart.m; sourceTree = "<group>"; };
-		FF45E85422A113300054C4BA /* ZFWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWave.m; sourceTree = "<group>"; };
-		FF45E85622A113300054C4BA /* ZFHorizontalBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalBar.h; sourceTree = "<group>"; };
-		FF45E85722A113300054C4BA /* ZFHorizontalBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalBarChart.m; sourceTree = "<group>"; };
-		FF45E85822A113300054C4BA /* ZFHorizontalBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalBar.m; sourceTree = "<group>"; };
-		FF45E85922A113300054C4BA /* ZFHorizontalBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalBarChart.h; sourceTree = "<group>"; };
 		FF45E85C22A113300054C4BA /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
 		FF45E85D22A113300054C4BA /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
 		FF45E85F22A113300054C4BA /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
@@ -301,7 +201,6 @@
 		FF45E8D122A113390054C4BA /* UIViewController+SlideFromSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SlideFromSide.h"; sourceTree = "<group>"; };
 		FF45E8D222A113390054C4BA /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		FF45E8D322A113390054C4BA /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
-		FF45E8D422A113390054C4BA /* UITableView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Category.m"; sourceTree = "<group>"; };
 		FF45E8D522A113390054C4BA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		FF45E8D622A113390054C4BA /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 		FF45E8D722A113390054C4BA /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
@@ -310,16 +209,11 @@
 		FF45E8DA22A113390054C4BA /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
 		FF45E8DB22A113390054C4BA /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		FF45E8DC22A113390054C4BA /* UIViewController+SlideFromSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SlideFromSide.m"; sourceTree = "<group>"; };
-		FF45E8DD22A113390054C4BA /* UITableView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Category.h"; sourceTree = "<group>"; };
 		FF45E8DE22A113390054C4BA /* NSString+Predicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Predicate.m"; sourceTree = "<group>"; };
 		FF45E8DF22A113390054C4BA /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		FF45E8E022A113390054C4BA /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
 		FF45E8E122A113390054C4BA /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		FF45E8E222A113390054C4BA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		FF45E8E622A113390054C4BA /* RTIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTIconButton.h; sourceTree = "<group>"; };
-		FF45E8E722A113390054C4BA /* RTIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTIconButton.m; sourceTree = "<group>"; };
-		FF45E8E922A113390054C4BA /* SelectAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlert.m; sourceTree = "<group>"; };
-		FF45E8EA22A113390054C4BA /* SelectAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAlert.h; sourceTree = "<group>"; };
 		FF45E8EC22A113390054C4BA /* UITextFieldDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldDatePicker.m; sourceTree = "<group>"; };
 		FF45E8ED22A113390054C4BA /* UITextFieldPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldPicker.m; sourceTree = "<group>"; };
 		FF45E8EE22A113390054C4BA /* UITextFieldPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPicker.h; sourceTree = "<group>"; };
@@ -331,9 +225,6 @@
 		FF45E8F522A113390054C4BA /* SQTextHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTextHandle.h; sourceTree = "<group>"; };
 		FF45E8F622A113390054C4BA /* FSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTextView.m; sourceTree = "<group>"; };
 		FF45E8F722A113390054C4BA /* SQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTextField.h; sourceTree = "<group>"; };
-		FF45E8F922A113390054C4BA /* UITextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewCell.m; sourceTree = "<group>"; };
-		FF45E8FA22A113390054C4BA /* UITextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewCell.xib; sourceTree = "<group>"; };
-		FF45E8FB22A113390054C4BA /* UITextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewCell.h; sourceTree = "<group>"; };
 		FF45E8FF22A113390054C4BA /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		FF45E90022A113390054C4BA /* FileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHelper.m; sourceTree = "<group>"; };
 		FF45E90122A113390054C4BA /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
@@ -380,7 +271,6 @@
 		FF45E95822A1135D0054C4BA /* BillListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillListTableViewCell.m; sourceTree = "<group>"; };
 		FF45E95922A1135D0054C4BA /* BillListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillListTableViewCell.xib; sourceTree = "<group>"; };
 		FF45E95B22A1135D0054C4BA /* WaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterViewController.m; sourceTree = "<group>"; };
-		FF45E95C22A1135D0054C4BA /* WaterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterViewController.xib; sourceTree = "<group>"; };
 		FF45E95D22A1135D0054C4BA /* WaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterViewController.h; sourceTree = "<group>"; };
 		FF45E96022A1135D0054C4BA /* IClassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IClassListViewController.m; sourceTree = "<group>"; };
 		FF45E96122A1135D0054C4BA /* EClassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EClassListViewController.m; sourceTree = "<group>"; };
@@ -488,10 +378,12 @@
 		FF45E7D522A112040054C4BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41752B85247DF95600083B58 /* logo.png */,
 				FF45E76422A110F40054C4BA /* Assets.xcassets */,
 				FF45E76922A110F40054C4BA /* Info.plist */,
 				FF45E76A22A110F40054C4BA /* main.m */,
 				FF45E7D622A112D60054C4BA /* kacat-pch.pch */,
+				41752B87247DF98600083B58 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -503,7 +395,6 @@
 				FF45E7DF22A113300054C4BA /* HYCalendar */,
 				FF45E7E622A113300054C4BA /* HBDNavigationBar */,
 				FF45E7ED22A113300054C4BA /* Masonry */,
-				FF45E80722A113300054C4BA /* ZFChart */,
 				FF45E85A22A113300054C4BA /* IQKeyboardManager */,
 				FF45E87D22A113300054C4BA /* JQFMDB */,
 				FF45E88022A113300054C4BA /* DZNEmptyDataSet */,
@@ -514,12 +405,12 @@
 		FF45E7D822A113300054C4BA /* SQCardView */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E7D922A113300054C4BA /* SQCardView.m */,
-				FF45E7DA22A113300054C4BA /* SQCardViewLayout.m */,
 				FF45E7DB22A113300054C4BA /* SQCardModel.h */,
-				FF45E7DC22A113300054C4BA /* SQCardView.h */,
-				FF45E7DD22A113300054C4BA /* SQCardViewLayout.h */,
 				FF45E7DE22A113300054C4BA /* SQCardModel.m */,
+				FF45E7DC22A113300054C4BA /* SQCardView.h */,
+				FF45E7D922A113300054C4BA /* SQCardView.m */,
+				FF45E7DD22A113300054C4BA /* SQCardViewLayout.h */,
+				FF45E7DA22A113300054C4BA /* SQCardViewLayout.m */,
 			);
 			path = SQCardView;
 			sourceTree = "<group>";
@@ -527,12 +418,12 @@
 		FF45E7DF22A113300054C4BA /* HYCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E7E022A113300054C4BA /* HYCalendarView.m */,
 				FF45E7E122A113300054C4BA /* HYCalendarCollectionReusableView.h */,
-				FF45E7E222A113300054C4BA /* HYCalendarCollectionViewCell.m */,
-				FF45E7E322A113300054C4BA /* HYCalendarView.h */,
 				FF45E7E422A113300054C4BA /* HYCalendarCollectionReusableView.m */,
 				FF45E7E522A113300054C4BA /* HYCalendarCollectionViewCell.h */,
+				FF45E7E222A113300054C4BA /* HYCalendarCollectionViewCell.m */,
+				FF45E7E322A113300054C4BA /* HYCalendarView.h */,
+				FF45E7E022A113300054C4BA /* HYCalendarView.m */,
 			);
 			path = HYCalendar;
 			sourceTree = "<group>";
@@ -580,193 +471,6 @@
 				FF45E80622A113300054C4BA /* MASViewAttribute.m */,
 			);
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		FF45E80722A113300054C4BA /* ZFChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E80822A113300054C4BA /* ZFGenericChart */,
-				FF45E80B22A113300054C4BA /* ZFBarChart */,
-				FF45E81022A113300054C4BA /* Category */,
-				FF45E81B22A113300054C4BA /* ZFCirqueChart */,
-				FF45E82022A113300054C4BA /* ZFHorizontalAxis */,
-				FF45E82322A113300054C4BA /* Other */,
-				FF45E82A22A113300054C4BA /* ZFPieChart */,
-				FF45E83122A113300054C4BA /* ZFLineChart */,
-				FF45E83822A113300054C4BA /* Component */,
-				FF45E84122A113300054C4BA /* ZFRadarChart */,
-				FF45E84822A113300054C4BA /* ZFGenericAxis */,
-				FF45E84B22A113300054C4BA /* Model */,
-				FF45E85022A113300054C4BA /* ZFWaveChart */,
-				FF45E85522A113300054C4BA /* ZFHorizontalBarChart */,
-			);
-			path = ZFChart;
-			sourceTree = "<group>";
-		};
-		FF45E80822A113300054C4BA /* ZFGenericChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E80922A113300054C4BA /* ZFGenericChart.h */,
-				FF45E80A22A113300054C4BA /* ZFGenericChart.m */,
-			);
-			path = ZFGenericChart;
-			sourceTree = "<group>";
-		};
-		FF45E80B22A113300054C4BA /* ZFBarChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E80C22A113300054C4BA /* ZFBarChart.h */,
-				FF45E80D22A113300054C4BA /* ZFBar.h */,
-				FF45E80E22A113300054C4BA /* ZFBarChart.m */,
-				FF45E80F22A113300054C4BA /* ZFBar.m */,
-			);
-			path = ZFBarChart;
-			sourceTree = "<group>";
-		};
-		FF45E81022A113300054C4BA /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E81122A113300054C4BA /* UIView+Zirkfied.m */,
-				FF45E81222A113300054C4BA /* UIColor+Zirkfied.h */,
-				FF45E81322A113300054C4BA /* UIBezierPath+Zirkfied.m */,
-				FF45E81422A113300054C4BA /* NSString+Zirkfied.h */,
-				FF45E81522A113300054C4BA /* NSNumber+Zirkfied.h */,
-				FF45E81622A113300054C4BA /* UIView+Zirkfied.h */,
-				FF45E81722A113300054C4BA /* UIColor+Zirkfied.m */,
-				FF45E81822A113300054C4BA /* UIBezierPath+Zirkfied.h */,
-				FF45E81922A113300054C4BA /* NSString+Zirkfied.m */,
-				FF45E81A22A113300054C4BA /* NSNumber+Zirkfied.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		FF45E81B22A113300054C4BA /* ZFCirqueChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E81C22A113300054C4BA /* ZFCirque.h */,
-				FF45E81D22A113300054C4BA /* ZFCirqueChart.m */,
-				FF45E81E22A113300054C4BA /* ZFCirqueChart.h */,
-				FF45E81F22A113300054C4BA /* ZFCirque.m */,
-			);
-			path = ZFCirqueChart;
-			sourceTree = "<group>";
-		};
-		FF45E82022A113300054C4BA /* ZFHorizontalAxis */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E82122A113300054C4BA /* ZFHorizontalAxis.m */,
-				FF45E82222A113300054C4BA /* ZFHorizontalAxis.h */,
-			);
-			path = ZFHorizontalAxis;
-			sourceTree = "<group>";
-		};
-		FF45E82322A113300054C4BA /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E82422A113300054C4BA /* ZFColor.h */,
-				FF45E82522A113300054C4BA /* ZFConst.m */,
-				FF45E82622A113300054C4BA /* ZFChart.h */,
-				FF45E82722A113300054C4BA /* ZFMethod.h */,
-				FF45E82822A113300054C4BA /* ZFConst.h */,
-				FF45E82922A113300054C4BA /* ZFMethod.m */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		FF45E82A22A113300054C4BA /* ZFPieChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E82B22A113300054C4BA /* ZFPieChart.m */,
-				FF45E82C22A113300054C4BA /* ZFPie.h */,
-				FF45E82D22A113300054C4BA /* ZFTranslucencePath.h */,
-				FF45E82E22A113300054C4BA /* ZFPieChart.h */,
-				FF45E82F22A113300054C4BA /* ZFPie.m */,
-				FF45E83022A113300054C4BA /* ZFTranslucencePath.m */,
-			);
-			path = ZFPieChart;
-			sourceTree = "<group>";
-		};
-		FF45E83122A113300054C4BA /* ZFLineChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E83222A113300054C4BA /* ZFCircle.h */,
-				FF45E83322A113300054C4BA /* ZFLineChart.m */,
-				FF45E83422A113300054C4BA /* ZFLine.h */,
-				FF45E83522A113300054C4BA /* ZFLineChart.h */,
-				FF45E83622A113300054C4BA /* ZFCircle.m */,
-				FF45E83722A113300054C4BA /* ZFLine.m */,
-			);
-			path = ZFLineChart;
-			sourceTree = "<group>";
-		};
-		FF45E83822A113300054C4BA /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E83922A113300054C4BA /* ZFPopoverLabel.h */,
-				FF45E83A22A113300054C4BA /* ZFXAxisLine.m */,
-				FF45E83B22A113300054C4BA /* ZFYAxisLine.m */,
-				FF45E83C22A113300054C4BA /* ZFLabel.h */,
-				FF45E83D22A113300054C4BA /* ZFPopoverLabel.m */,
-				FF45E83E22A113300054C4BA /* ZFXAxisLine.h */,
-				FF45E83F22A113300054C4BA /* ZFLabel.m */,
-				FF45E84022A113300054C4BA /* ZFYAxisLine.h */,
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
-		FF45E84122A113300054C4BA /* ZFRadarChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E84222A113300054C4BA /* ZFRadar.m */,
-				FF45E84322A113300054C4BA /* ZFPolygon.m */,
-				FF45E84422A113300054C4BA /* ZFRadarChart.m */,
-				FF45E84522A113300054C4BA /* ZFRadar.h */,
-				FF45E84622A113300054C4BA /* ZFPolygon.h */,
-				FF45E84722A113300054C4BA /* ZFRadarChart.h */,
-			);
-			path = ZFRadarChart;
-			sourceTree = "<group>";
-		};
-		FF45E84822A113300054C4BA /* ZFGenericAxis */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E84922A113300054C4BA /* ZFGenericAxis.h */,
-				FF45E84A22A113300054C4BA /* ZFGenericAxis.m */,
-			);
-			path = ZFGenericAxis;
-			sourceTree = "<group>";
-		};
-		FF45E84B22A113300054C4BA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E84C22A113300054C4BA /* ZFGradientAttribute.h */,
-				FF45E84D22A113300054C4BA /* ZFCurveAttribute.h */,
-				FF45E84E22A113300054C4BA /* ZFGradientAttribute.m */,
-				FF45E84F22A113300054C4BA /* ZFCurveAttribute.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FF45E85022A113300054C4BA /* ZFWaveChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E85122A113300054C4BA /* ZFWaveChart.h */,
-				FF45E85222A113300054C4BA /* ZFWave.h */,
-				FF45E85322A113300054C4BA /* ZFWaveChart.m */,
-				FF45E85422A113300054C4BA /* ZFWave.m */,
-			);
-			path = ZFWaveChart;
-			sourceTree = "<group>";
-		};
-		FF45E85522A113300054C4BA /* ZFHorizontalBarChart */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E85622A113300054C4BA /* ZFHorizontalBar.h */,
-				FF45E85722A113300054C4BA /* ZFHorizontalBarChart.m */,
-				FF45E85822A113300054C4BA /* ZFHorizontalBar.m */,
-				FF45E85922A113300054C4BA /* ZFHorizontalBarChart.h */,
-			);
-			path = ZFHorizontalBarChart;
 			sourceTree = "<group>";
 		};
 		FF45E85A22A113300054C4BA /* IQKeyboardManager */ = {
@@ -848,8 +552,8 @@
 		FF45E87D22A113300054C4BA /* JQFMDB */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E87E22A113300054C4BA /* JQFMDB.m */,
 				FF45E87F22A113300054C4BA /* JQFMDB.h */,
+				FF45E87E22A113300054C4BA /* JQFMDB.m */,
 			);
 			path = JQFMDB;
 			sourceTree = "<group>";
@@ -889,9 +593,9 @@
 			isa = PBXGroup;
 			children = (
 				FF45E8CE22A113390054C4BA /* bills.plist */,
-				FF45E8CC22A113390054C4BA /* DataBase.plist */,
 				FF45E8CF22A113390054C4BA /* DataBase.h */,
 				FF45E8CD22A113390054C4BA /* DataBase.m */,
+				FF45E8CC22A113390054C4BA /* DataBase.plist */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -899,24 +603,24 @@
 		FF45E8D022A113390054C4BA /* Extend */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E8D122A113390054C4BA /* UIViewController+SlideFromSide.h */,
-				FF45E8DC22A113390054C4BA /* UIViewController+SlideFromSide.m */,
-				FF45E8D222A113390054C4BA /* NSString+Category.h */,
-				FF45E8DB22A113390054C4BA /* NSString+Category.m */,
 				FF45E8DA22A113390054C4BA /* NSDate+Category.h */,
 				FF45E8D322A113390054C4BA /* NSDate+Category.m */,
-				FF45E8DD22A113390054C4BA /* UITableView+Category.h */,
-				FF45E8D422A113390054C4BA /* UITableView+Category.m */,
+				FF45E8D222A113390054C4BA /* NSString+Category.h */,
+				FF45E8DB22A113390054C4BA /* NSString+Category.m */,
+				FF45E8D922A113390054C4BA /* NSString+Predicate.h */,
+				FF45E8DE22A113390054C4BA /* NSString+Predicate.m */,
+				FF45E8E022A113390054C4BA /* UIButton+Category.h */,
+				FF45E8D622A113390054C4BA /* UIButton+Category.m */,
+				FF45E8D822A113390054C4BA /* UIColor+Category.h */,
+				FF45E8DF22A113390054C4BA /* UIColor+Category.m */,
+				41752B82247DF8F800083B58 /* UITextView+YLTextView.h */,
+				41752B83247DF8F800083B58 /* UITextView+YLTextView.m */,
 				FF45E8E222A113390054C4BA /* UIView+Frame.h */,
 				FF45E8D522A113390054C4BA /* UIView+Frame.m */,
 				FF45E8E122A113390054C4BA /* UIViewController+Extension.h */,
 				FF45E8D722A113390054C4BA /* UIViewController+Extension.m */,
-				FF45E8D922A113390054C4BA /* NSString+Predicate.h */,
-				FF45E8DE22A113390054C4BA /* NSString+Predicate.m */,
-				FF45E8D822A113390054C4BA /* UIColor+Category.h */,
-				FF45E8DF22A113390054C4BA /* UIColor+Category.m */,
-				FF45E8E022A113390054C4BA /* UIButton+Category.h */,
-				FF45E8D622A113390054C4BA /* UIButton+Category.m */,
+				FF45E8D122A113390054C4BA /* UIViewController+SlideFromSide.h */,
+				FF45E8DC22A113390054C4BA /* UIViewController+SlideFromSide.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -934,31 +638,10 @@
 		FF45E8E422A113390054C4BA /* Useful */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E8E522A113390054C4BA /* CustomButtom */,
-				FF45E8E822A113390054C4BA /* SelectAlert */,
 				FF45E8EB22A113390054C4BA /* DataPicker */,
 				FF45E8F022A113390054C4BA /* SQTextHandle */,
-				FF45E8F822A113390054C4BA /* Cell */,
 			);
 			path = Useful;
-			sourceTree = "<group>";
-		};
-		FF45E8E522A113390054C4BA /* CustomButtom */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E8E622A113390054C4BA /* RTIconButton.h */,
-				FF45E8E722A113390054C4BA /* RTIconButton.m */,
-			);
-			path = CustomButtom;
-			sourceTree = "<group>";
-		};
-		FF45E8E822A113390054C4BA /* SelectAlert */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E8EA22A113390054C4BA /* SelectAlert.h */,
-				FF45E8E922A113390054C4BA /* SelectAlert.m */,
-			);
-			path = SelectAlert;
 			sourceTree = "<group>";
 		};
 		FF45E8EB22A113390054C4BA /* DataPicker */ = {
@@ -986,23 +669,13 @@
 			path = SQTextHandle;
 			sourceTree = "<group>";
 		};
-		FF45E8F822A113390054C4BA /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				FF45E8FB22A113390054C4BA /* UITextViewCell.h */,
-				FF45E8F922A113390054C4BA /* UITextViewCell.m */,
-				FF45E8FA22A113390054C4BA /* UITextViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		FF45E8FE22A113390054C4BA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E8FF22A113390054C4BA /* Helper.h */,
-				FF45E90022A113390054C4BA /* FileHelper.m */,
-				FF45E90122A113390054C4BA /* Helper.m */,
 				FF45E90222A113390054C4BA /* FileHelper.h */,
+				FF45E90022A113390054C4BA /* FileHelper.m */,
+				FF45E8FF22A113390054C4BA /* Helper.h */,
+				FF45E90122A113390054C4BA /* Helper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1030,10 +703,10 @@
 			isa = PBXGroup;
 			children = (
 				FF45E92422A1133E0054C4BA /* NetAPI.h */,
-				FF45E92222A1133D0054C4BA /* NetWorkManager.h */,
-				FF45E92522A1133E0054C4BA /* NetWorkManager.m */,
 				FF45E92622A1133E0054C4BA /* NetWorkHelper.h */,
 				FF45E92322A1133E0054C4BA /* NetWorkHelper.m */,
+				FF45E92222A1133D0054C4BA /* NetWorkManager.h */,
+				FF45E92522A1133E0054C4BA /* NetWorkManager.m */,
 			);
 			path = NetWorkManager;
 			sourceTree = "<group>";
@@ -1108,11 +781,11 @@
 		FF45E93E22A1135D0054C4BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E93F22A1135D0054C4BA /* AccountAddTypeViewController.m */,
-				FF45E94022A1135D0054C4BA /* AccountViewController.m */,
-				FF45E94122A1135D0054C4BA /* AccountAddTypeViewController.xib */,
 				FF45E94222A1135D0054C4BA /* AccountAddTypeViewController.h */,
+				FF45E93F22A1135D0054C4BA /* AccountAddTypeViewController.m */,
+				FF45E94122A1135D0054C4BA /* AccountAddTypeViewController.xib */,
 				FF45E94322A1135D0054C4BA /* AccountViewController.h */,
+				FF45E94022A1135D0054C4BA /* AccountViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1181,9 +854,8 @@
 		FF45E95A22A1135D0054C4BA /* Water */ = {
 			isa = PBXGroup;
 			children = (
-				FF45E95B22A1135D0054C4BA /* WaterViewController.m */,
-				FF45E95C22A1135D0054C4BA /* WaterViewController.xib */,
 				FF45E95D22A1135D0054C4BA /* WaterViewController.h */,
+				FF45E95B22A1135D0054C4BA /* WaterViewController.m */,
 			);
 			path = Water;
 			sourceTree = "<group>";
@@ -1293,14 +965,14 @@
 			files = (
 				FF45E90722A113390054C4BA /* DataBase.plist in Resources */,
 				FF45E97422A1135E0054C4BA /* CenterViewController.xib in Resources */,
+				41752B86247DF95600083B58 /* logo.png in Resources */,
 				FF45E97722A1135E0054C4BA /* AccountAddTypeViewController.xib in Resources */,
 				FF45E91F22A113390054C4BA /* HUDManager.bundle in Resources */,
 				FF45E8BD22A113300054C4BA /* IQKeyboardManager.bundle in Resources */,
 				FF45E97B22A1135E0054C4BA /* BillAddViewController.xib in Resources */,
-				FF45E98222A1135E0054C4BA /* WaterViewController.xib in Resources */,
 				FF45E98022A1135E0054C4BA /* BillListTableViewCell.xib in Resources */,
-				FF45E91B22A113390054C4BA /* UITextViewCell.xib in Resources */,
 				FF45E97222A1135E0054C4BA /* HomeHeadView.xib in Resources */,
+				41752B88247DF98600083B58 /* LaunchScreen.storyboard in Resources */,
 				FF45E76522A110F40054C4BA /* Assets.xcassets in Resources */,
 				FF45E90922A113390054C4BA /* bills.plist in Resources */,
 			);
@@ -1362,15 +1034,10 @@
 			files = (
 				FF45E8BC22A113300054C4BA /* IQPreviousNextView.m in Sources */,
 				FF45E98622A1135E0054C4BA /* ClassAddViewController.m in Sources */,
-				FF45E8A222A113300054C4BA /* ZFMethod.m in Sources */,
-				FF45E8B322A113300054C4BA /* ZFWaveChart.m in Sources */,
-				FF45E8A622A113300054C4BA /* ZFLineChart.m in Sources */,
 				FF45E91E22A113390054C4BA /* HUDManager.m in Sources */,
 				FF45E98422A1135E0054C4BA /* EClassListViewController.m in Sources */,
 				FF45E89222A113300054C4BA /* View+MASAdditions.m in Sources */,
 				FF45E89522A113300054C4BA /* MASViewAttribute.m in Sources */,
-				FF45E8A322A113300054C4BA /* ZFPieChart.m in Sources */,
-				FF45E8A422A113300054C4BA /* ZFPie.m in Sources */,
 				FF45E97D22A1135E0054C4BA /* BillAddViewController.m in Sources */,
 				FF45E8BE22A113300054C4BA /* IQKeyboardManager.m in Sources */,
 				FF45E88C22A113300054C4BA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -1386,42 +1053,27 @@
 				FF45E88B22A113300054C4BA /* HBDNavigationController.m in Sources */,
 				FF45E90822A113390054C4BA /* DataBase.m in Sources */,
 				FF45E88E22A113300054C4BA /* MASCompositeConstraint.m in Sources */,
-				FF45E91322A113390054C4BA /* RTIconButton.m in Sources */,
 				FF45E97022A1135E0054C4BA /* HomeViewController.m in Sources */,
 				FF45E91822A113390054C4BA /* LimitInput.m in Sources */,
 				FF45E91222A113390054C4BA /* UIColor+Category.m in Sources */,
-				FF45E8AE22A113300054C4BA /* ZFPolygon.m in Sources */,
 				FF45E88F22A113300054C4BA /* MASConstraintMaker.m in Sources */,
 				FF45E91722A113390054C4BA /* SQTextField.m in Sources */,
-				FF45E91A22A113390054C4BA /* UITextViewCell.m in Sources */,
 				FF45E88D22A113300054C4BA /* ViewController+MASAdditions.m in Sources */,
-				FF45E8B022A113300054C4BA /* ZFGenericAxis.m in Sources */,
 				FF45E92E22A1133E0054C4BA /* JSONModel.m in Sources */,
 				FF45E88622A113300054C4BA /* HYCalendarView.m in Sources */,
-				FF45E91422A113390054C4BA /* SelectAlert.m in Sources */,
-				FF45E8B222A113300054C4BA /* ZFCurveAttribute.m in Sources */,
-				FF45E8A722A113300054C4BA /* ZFCircle.m in Sources */,
 				FF45E97122A1135E0054C4BA /* HomeHeadView.m in Sources */,
-				FF45E8B422A113300054C4BA /* ZFWave.m in Sources */,
 				FF45E8BF22A113300054C4BA /* IQNSArray+Sort.m in Sources */,
 				FF45E98822A1135E0054C4BA /* BaseNavigationController.m in Sources */,
-				FF45E89822A113300054C4BA /* ZFBar.m in Sources */,
-				FF45E89A22A113300054C4BA /* UIBezierPath+Zirkfied.m in Sources */,
 				FF45E97C22A1135E0054C4BA /* SelectClassViewController.m in Sources */,
 				FF45E8C322A113300054C4BA /* IQUIViewController+Additions.m in Sources */,
-				FF45E8AA22A113300054C4BA /* ZFYAxisLine.m in Sources */,
 				FF45E98322A1135E0054C4BA /* IClassListViewController.m in Sources */,
 				FF45E98522A1135E0054C4BA /* ClassDetailViewController.m in Sources */,
 				FF45E88722A113300054C4BA /* HYCalendarCollectionViewCell.m in Sources */,
-				FF45E8AD22A113300054C4BA /* ZFRadar.m in Sources */,
 				FF45E8C022A113300054C4BA /* IQUITextFieldView+Additions.m in Sources */,
-				FF45E89F22A113300054C4BA /* ZFCirque.m in Sources */,
 				FF45E98922A1135E0054C4BA /* MainTabBarController.m in Sources */,
-				FF45E8A022A113300054C4BA /* ZFHorizontalAxis.m in Sources */,
 				FF45E90E22A113390054C4BA /* UIViewController+Extension.m in Sources */,
 				FF45E8C622A113300054C4BA /* UIScrollView+EmptyDataSet.m in Sources */,
 				FF45E75D22A110EB0054C4BA /* AppDelegate.m in Sources */,
-				FF45E89E22A113300054C4BA /* ZFCirqueChart.m in Sources */,
 				FF45E91522A113390054C4BA /* UITextFieldDatePicker.m in Sources */,
 				FF45E8BB22A113300054C4BA /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				FF45E88922A113300054C4BA /* UIViewController+HBD.m in Sources */,
@@ -1429,18 +1081,11 @@
 				FF45E89022A113300054C4BA /* MASLayoutConstraint.m in Sources */,
 				FF45E8B822A113300054C4BA /* IQToolbar.m in Sources */,
 				FF45E8C522A113300054C4BA /* JQFMDB.m in Sources */,
-				FF45E8B522A113300054C4BA /* ZFHorizontalBarChart.m in Sources */,
 				FF45E90A22A113390054C4BA /* NSDate+Category.m in Sources */,
 				FF45E8C422A113300054C4BA /* IQKeyboardReturnKeyHandler.m in Sources */,
 				FF45E98122A1135E0054C4BA /* WaterViewController.m in Sources */,
 				FF45E91922A113390054C4BA /* FSTextView.m in Sources */,
-				FF45E8AB22A113300054C4BA /* ZFPopoverLabel.m in Sources */,
-				FF45E89622A113300054C4BA /* ZFGenericChart.m in Sources */,
 				FF45E88522A113300054C4BA /* SQCardModel.m in Sources */,
-				FF45E8B622A113300054C4BA /* ZFHorizontalBar.m in Sources */,
-				FF45E89C22A113300054C4BA /* NSString+Zirkfied.m in Sources */,
-				FF45E8AC22A113300054C4BA /* ZFLabel.m in Sources */,
-				FF45E90B22A113390054C4BA /* UITableView+Category.m in Sources */,
 				FF45E97E22A1135E0054C4BA /* BillM.m in Sources */,
 				FF45E90D22A113390054C4BA /* UIButton+Category.m in Sources */,
 				FF45E8C122A113300054C4BA /* IQUIScrollView+Additions.m in Sources */,
@@ -1453,28 +1098,19 @@
 				FF45E97522A1135E0054C4BA /* AccountAddTypeViewController.m in Sources */,
 				FF45E92F22A1133E0054C4BA /* CommonM.m in Sources */,
 				FF45E8B722A113300054C4BA /* IQTextView.m in Sources */,
-				FF45E8A122A113300054C4BA /* ZFConst.m in Sources */,
 				FF45E90F22A113390054C4BA /* NSString+Category.m in Sources */,
-				FF45E8AF22A113300054C4BA /* ZFRadarChart.m in Sources */,
 				FF45E89422A113300054C4BA /* MASViewConstraint.m in Sources */,
-				FF45E8B122A113300054C4BA /* ZFGradientAttribute.m in Sources */,
 				FF45E92C22A1133E0054C4BA /* NetWorkHelper.m in Sources */,
 				FF45E91D22A113390054C4BA /* Helper.m in Sources */,
 				FF45E97922A1135E0054C4BA /* AccountAddTypeView.m in Sources */,
 				FF45E97F22A1135E0054C4BA /* BillListTableViewCell.m in Sources */,
 				FF45E88422A113300054C4BA /* SQCardViewLayout.m in Sources */,
-				FF45E89D22A113300054C4BA /* NSNumber+Zirkfied.m in Sources */,
 				FF45E8C222A113300054C4BA /* IQUIView+Hierarchy.m in Sources */,
-				FF45E89722A113300054C4BA /* ZFBarChart.m in Sources */,
-				FF45E89B22A113300054C4BA /* UIColor+Zirkfied.m in Sources */,
 				FF45E97622A1135E0054C4BA /* AccountViewController.m in Sources */,
-				FF45E8A522A113300054C4BA /* ZFTranslucencePath.m in Sources */,
-				FF45E89922A113300054C4BA /* UIView+Zirkfied.m in Sources */,
+				41752B84247DF8F800083B58 /* UITextView+YLTextView.m in Sources */,
 				FF45E98722A1135E0054C4BA /* ClassM.m in Sources */,
-				FF45E8A922A113300054C4BA /* ZFXAxisLine.m in Sources */,
 				FF45E88822A113300054C4BA /* HYCalendarCollectionReusableView.m in Sources */,
 				FF45E97A22A1135E0054C4BA /* BillListViewController.m in Sources */,
-				FF45E8A822A113300054C4BA /* ZFLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1598,7 +1234,7 @@
 			baseConfigurationReference = B3C45AA0CE0B68A35D82632D /* Pods-KACat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BH9N7HY27U;
 				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/kacat-pch.pch";
@@ -1619,7 +1255,7 @@
 			baseConfigurationReference = EF0B0AF2D1BC7548A6FAAEFB /* Pods-KACat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BH9N7HY27U;
 				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/kacat-pch.pch";

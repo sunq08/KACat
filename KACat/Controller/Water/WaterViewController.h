@@ -11,11 +11,3 @@
 @interface WaterViewController : UIViewController
 
 @end
-
-@interface EstimatedItemCollectionViewCell : UICollectionViewCell
-@property (nonatomic,strong) UILabel *label;
-
-@property (nonatomic,copy) NSString *title;
-
-
-@end

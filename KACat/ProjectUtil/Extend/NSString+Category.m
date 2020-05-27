@@ -28,22 +28,7 @@
     return newStr;
 }
 
-/** 后四位用*显示 */
-+ (NSString*) getLastFourSecrectWithString:(NSString*)string{
-    if(string.length<=4){
-        return string;
-    }
-    
-    long length = string.length - 4;
-    NSString *newStr = [string substringFromIndex:length];
-    for (int i = 0; i < length ; i ++) {
-        newStr = [NSString stringWithFormat:@"*%@",newStr];
-    }
-    return newStr;
-}
-
-
-+(NSString *)countNumAndChangeformat:(NSString *)num {
++ (NSString *)countNumAndChangeformat:(NSString *)num {
     NSNumberFormatter *moneyFormatter = [[NSNumberFormatter alloc] init];
     moneyFormatter.positiveFormat = @"###,###";
     //如要增加小数点请自行修改为@"###,###,##"
@@ -80,59 +65,57 @@
     }
 }
 
+/** 取出所有空格 */
+- (NSString *)allTrimmedString {
+    return [self stringByReplacingOccurrencesOfString:@" "
+                                           withString:@""];
+}
+
 //去掉前后空格
 - (NSString *)trimmedString{
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
 }
 
-/**  千分位转换*/
-+ (NSString *)positiveStringFormat:(NSString *)text{
-    if(!text || [text isEqualToString:@""] || [text floatValue] == 0){
-        return @"0.00";
-    }
-    if (text.floatValue < 1000) {
-        return  [NSString stringWithFormat:@"%.2f",text.floatValue];
-    };
-    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-    [numberFormatter setPositiveFormat:@",###.00;"];
-    return [numberFormatter stringFromNumber:[NSNumber numberWithDouble:[text doubleValue]]];
-}
-/**  千分位转换*/
-+ (NSString *)positiveCGFloatFormat:(CGFloat)text{
-    if(text == 0){
-        return @"0.00";
-    }
-    if (text < 1000) {
-        return  [NSString stringWithFormat:@"%.2f",text];
-    };
-    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-    [numberFormatter setPositiveFormat:@",###.00;"];
-    return [numberFormatter stringFromNumber:[NSNumber numberWithDouble:text]];
-}
-
-+ (NSString *)subString:(NSString *)string length:(NSInteger)length{
-    if(!string || [string isEqualToString:@""]) {
+- (NSString *)subStringWithlength:(NSInteger)length{
+    if(!self || [self isEqualToString:@""]) {
         return @"";
     }
-    if(string.length<=length){
-        return string;
+    if(self.length<=length){
+        return self;
     }
-    return [string substringToIndex:length];
+    return [self substringToIndex:length];
 }
 
-+ (NSString *)reviseString:(NSString *)str {
+- (NSString *)reviseString {
     //直接传入精度丢失有问题的Double类型
-    double conversionValue = [str doubleValue];
+    double conversionValue = [self doubleValue];
     NSString *doubleString = [NSString stringWithFormat:@"%lf", conversionValue];
     NSDecimalNumber *decNumber = [NSDecimalNumber decimalNumberWithString:doubleString];
     return [decNumber stringValue];
 }
 
++ (NSString *)toJSONStringForDictionary:(NSMutableDictionary *)dict{
+    if(dict!=nil && [dict isKindOfClass:[NSDictionary class]]){
+        NSData *paramsJSONData = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
+        return [[NSString alloc] initWithData:paramsJSONData encoding:NSUTF8StringEncoding];
+    }
+    return @"";
+}
+
 @end
 
 
-
-
+NSString * format(NSString *format, ...)
+{
+    va_list ap;
+    va_start (ap, format);
+    
+    NSString *body = [[NSString alloc] initWithFormat:format arguments:ap];
+    
+    va_end (ap);
+    
+    return body;
+}
 
 
 
