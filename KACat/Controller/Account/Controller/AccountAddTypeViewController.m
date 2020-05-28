@@ -11,12 +11,9 @@
 #import "FSTextView.h"
 #import "AccountM.h"
 #import <FMDB/FMDB.h>
-@interface AccountAddTypeViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *nameTF;
-@property (weak, nonatomic) IBOutlet UIImageView *icon;
-@property (weak, nonatomic) IBOutlet UITextField *amountTF;
-@property (weak, nonatomic) IBOutlet FSTextView *remarkTV;
-
+@interface AccountAddTypeViewController ()<THFormViewDelegate>
+@property (nonatomic, strong) THFormView *formView;//
+@property (nonatomic, strong) NSMutableArray *cells;//
 @end
 
 @implementation AccountAddTypeViewController
@@ -26,51 +23,85 @@
     
     [self initUI];
     
-    if(self.accountM) [self loadData];
+    [self loadData];
 }
 
 - (void)initUI{
     NSString *title = (self.accountM)?@"修改账户信息":@"新增账户类型";
     self.title = title;
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc]initWithImage:ImageNamed(@"icon_save") style:UIBarButtonItemStylePlain target:self action:@selector(saveClick)];
-    self.navigationItem.rightBarButtonItem = addBtn;
+    self.formView = [[THFormView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:self.formView];
+    self.formView.delegate = self;
     
-    [self.nameTF setValue:@10 forKey:@"LimitInput"];
-    [self.amountTF setValue:@15 forKey:@"LimitInput"];
+    [self.formView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [make edges];
+    }];
+    
+    self.cells = [NSMutableArray arrayWithCapacity:0];
+    
+    THFormTextM *nameM = [THFormTextM cellModelWithIdentifier:@"name"];
+    nameM.title = @"账户名";
+    nameM.limitLength = @10;
+    nameM.mustIn = YES;
+    [self.cells addObject:nameM];
+    
+    THFormImageM *iconM = [THFormImageM cellModelWithIdentifier:@"icon"];
+    iconM.title = @"图标";
+    iconM.maxCount = 1;
+    [self.cells addObject:iconM];
+
+    THFormTextM *amountM = [THFormTextM cellModelWithIdentifier:@"amount"];
+    amountM.title = @"余额";
+    amountM.limitLength = @10;
+    amountM.keyboardType = UIKeyboardTypeDecimalPad;
+    [self.cells addObject:amountM];
+    
+    THFormTextM *remarkM = [THFormTextM cellModelWithIdentifier:@"remark"];
+    remarkM.title = @"备注";
+    remarkM.isTextArea = YES;
+    remarkM.limitLength = @100;
+    [self.cells addObject:remarkM];
+    
+    [self.formView reloadData];
 }
 
 - (void)loadData{
-    AccountM *model = self.accountM;
+    if(!self.accountM) return;
+    THFormTextM *nameM = [self.cells objectAtIndex:0];
+    nameM.value = self.accountM.name;
     
-    self.nameTF.text = model.name;
-    self.amountTF.text = [NSString stringWithFormat:@"%.2f",model.amount];
-    self.remarkTV.text = model.remark;
+    THFormTextM *amountM = [self.cells objectAtIndex:2];
+    amountM.value = format(@"%.2f",self.accountM.amount);
     
-    if(model.icon){
-        UIImage *icon = [UIImage imageWithData:model.icon];
-        self.icon.image = icon;
+    THFormTextM *remarkM = [self.cells objectAtIndex:3];
+    remarkM.value = self.accountM.remark;
+    
+    if(self.accountM.icon){
+//        THFormImageM *iconM = [self.cells objectAtIndex:1];
+//        UIImage *icon = [UIImage imageWithData:self.accountM.icon];
     }
+    [self.formView reloadData];
 }
 
-- (void)saveClick{
-    if(!ValidStr(self.nameTF.text)){
-        [HUDManager showWarning:@"账户名称不能为空！"];
-        return;
-    }
+///<共有多少行
+- (NSInteger)numberOfIndexInFormView:(THFormView *)formView{
+    return self.cells.count;
+}
+///<配置cell信息
+- (THFormBaseM *)formView:(THFormView *)formView cellModelForIndex:(NSInteger)index{
+    THFormBaseM *model = [self.cells objectAtIndex:index];
+    return model;
+}
 
-    if(ValidStr(self.amountTF.text) && ![self.amountTF.text isValidPrice]){
-        [HUDManager showWarning:@"请输入正确的金额！"];
-        return;
-    }
+///<点击确定调用的方法，将数据带出
+- (void)formView:(THFormView *)formView didSubmitClick:(NSMutableDictionary *)dict{
     AccountM *model = [[AccountM alloc] init];
-    model.name = self.nameTF.text;
-    model.amount = [self.amountTF.text doubleValue];
-    if(ValidStr(self.remarkTV.text)){
-        model.remark = self.remarkTV.text;
-    }
+    model.name = [dict objectForKey:@"name"];
+    model.amount = [[dict objectForKey:@"amount"] doubleValue];
+    model.remark = [dict objectForKey:@"remark"];
     
     if(self.accountM){
         model.pkid = self.accountM.pkid;
@@ -78,16 +109,7 @@
     }else{
         [[DataBase sharedDataBase] addAccountM:model];
     }
-    
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)selectImageClick:(id)sender {
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 @end

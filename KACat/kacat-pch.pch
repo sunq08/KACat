@@ -17,6 +17,7 @@
 #import "UseDefine.h"           //全局宏
 #import "ThirdDefine.h"         //第三方宏
 #import "HUDManager.h"
+#import "THKit.h"
 
 #import "UIView+Frame.h"        //扩展属性
 #import "NSString+Predicate.h"
@@ -31,8 +32,8 @@
 #import "Masonry.h"
 #import "DataBase.h"
 
-//#import <SDWebImage/UIImageView+WebCache.h>
-//#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
 #import <MJRefresh/MJRefresh.h>
 
 #endif /* kacat_pch_pch */
