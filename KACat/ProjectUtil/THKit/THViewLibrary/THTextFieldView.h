@@ -1,26 +1,24 @@
 //
-//  THTextField.h
-//  GYSA
+//  THTextFieldView.h
+//  THKitProject
 //
-//  Created by SunQ on 2019/8/26.
-//  Copyright © 2019年 itonghui. All rights reserved.
-//  通用textfiled视图，左边可以是icon，也可以是title
+//  Created by 孙强 on 2020/5/29.
+//  Copyright © 2020 sunq. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
 /** textField类型的枚举*/
-typedef enum THTextFieldType {
-    THTextFieldTypePlain          = 0,        //icon default
-    THTextFieldTypeTitle          = 1,        //title
-}THTextFieldType;
-
-@interface THTextField : UIView
-
+typedef enum THTextFieldViewType {
+    THTextFieldViewTypePlain          = 0,        //icon default
+    THTextFieldViewTypeTitle          = 1,        //title
+    THTextFieldViewTypeSubTitle       = 2,        //sub title
+}THTextFieldViewType;
+@interface THTextFieldView : UIView
 /** @@初始化方法*/
-+ (instancetype)textFieldViewType:(THTextFieldType)textFieldType;
-- (instancetype)initWithFrame:(CGRect)frame type:(THTextFieldType)textFieldType;
++ (instancetype)textFieldViewType:(THTextFieldViewType)textFieldViewType;
+- (instancetype)initWithFrame:(CGRect)frame type:(THTextFieldViewType)textFieldViewType;
 
 
 /** @@icon interface*/

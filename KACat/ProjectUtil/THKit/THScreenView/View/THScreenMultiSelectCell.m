@@ -108,7 +108,7 @@
 
 - (THTextFieldPicker *)mainPicker{
     if(!_mainPicker){
-        _mainPicker                 = [THTextFieldPicker creatTextFiledWithStyle:THTextFiledCommonPicker];
+        _mainPicker                 = [THTextFieldPicker textFiledPickerWithStyle:THTextFiledCommonPicker];
         _mainPicker.font            = [UIFont systemFontOfSize:13];
         _mainPicker.borderStyle     = UITextBorderStyleNone;
         _mainPicker.backgroundColor = [UIColor whiteColor];
@@ -122,7 +122,7 @@
 }
 - (THTextFieldPicker *)secondPicker{
     if(!_secondPicker){
-        _secondPicker                 = [THTextFieldPicker creatTextFiledWithStyle:THTextFiledCommonPicker];
+        _secondPicker                 = [THTextFieldPicker textFiledPickerWithStyle:THTextFiledCommonPicker];
         _secondPicker.font            = [UIFont systemFontOfSize:13];
         _secondPicker.borderStyle     = UITextBorderStyleNone;
         _secondPicker.backgroundColor = [UIColor whiteColor];
@@ -136,7 +136,7 @@
 }
 - (THTextFieldPicker *)thirdPicker{
     if(!_thirdPicker){
-        _thirdPicker                 = [THTextFieldPicker creatTextFiledWithStyle:THTextFiledCommonPicker];
+        _thirdPicker                 = [THTextFieldPicker textFiledPickerWithStyle:THTextFiledCommonPicker];
         _thirdPicker.font            = [UIFont systemFontOfSize:13];
         _thirdPicker.borderStyle     = UITextBorderStyleNone;
         _thirdPicker.backgroundColor = [UIColor whiteColor];

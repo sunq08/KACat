@@ -42,7 +42,7 @@
 }
 - (THTextFieldPicker *)mainPicker{
     if(!_mainPicker){
-        _mainPicker                 = [THTextFieldPicker creatTextFiledWithStyle:THTextFiledCommonPicker];
+        _mainPicker                 = [THTextFieldPicker textFiledPickerWithStyle:THTextFiledCommonPicker];
         _mainPicker.font            = [UIFont systemFontOfSize:13];
         _mainPicker.borderStyle     = UITextBorderStyleNone;
         _mainPicker.backgroundColor = [UIColor whiteColor];

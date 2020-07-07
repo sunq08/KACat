@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^THCellClick)(THArrowCell *cell);
 
 @interface THArrowCell : UIView
+/** 快捷创建arrowCell*/
++ (instancetype)arrowCell;
 /**图标*/
 @property (nonatomic, strong) IBInspectable UIImage   *mainImg;
 /**标题*/

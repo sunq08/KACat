@@ -11,13 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface THScreenDateM : THScreenBaseM
-@property (nonatomic, assign) BOOL      openFormat;
 @property (nonatomic, assign) BOOL      openRange;
-
-///<默认选择类型，0秒 1分 2时 3天 4月 5年, 默认是0
-@property (nonatomic, assign) NSInteger defaultFormat;
-///<选择范围的范围宽度，openFormat=yes时有效，0秒 1分 2时 3天 4月 5年, 默认是0
-@property (nonatomic, assign) NSInteger formatRange;
+@property (nonatomic,   copy) NSString  *format;//默认 YYYY-MM-DD HH:mm:ss
 @end
 
 NS_ASSUME_NONNULL_END

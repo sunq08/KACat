@@ -91,6 +91,10 @@ static DataBase *_DBCtl = nil;
     NSArray *account_backs = [_db jq_insertTable:@"t_account" dicOrModelArray:account];
     
     MLog(@"初始化数据失败数量:%ld",e_class_backs.count + i_class_backs.count + account_backs.count);
+    
+    NSString *billsplist = [[NSBundle mainBundle] pathForResource:@"bills" ofType:@"plist"];
+    NSArray *bills = [[NSArray alloc] initWithContentsOfFile:billsplist];
+    NSArray *bills_backs = [_db jq_insertTable:@"t_bill" dicOrModelArray:bills];
 }
 
 

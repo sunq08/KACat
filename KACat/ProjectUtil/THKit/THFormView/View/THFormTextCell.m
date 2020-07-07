@@ -8,12 +8,13 @@
 
 #import "THFormTextCell.h"
 #import "THFormTextM.h"
-//#import "UITextView+YLTextView.h"
+#import "THTextField.h"
+#import "THTextView.h"
 @interface THFormTextCell()<UITextFieldDelegate,UITextViewDelegate>
 @property (nonatomic, strong) THFormTextM *model;
-@property (nonatomic, strong) UITextField *mainTF;//tf
+@property (nonatomic, strong) THTextField *mainTF;//tf
 @property (nonatomic,   copy) ClickActionBlock  actionBlock;
-@property (nonatomic, strong) UITextView *mainTV;//tv
+@property (nonatomic, strong) THTextView *mainTV;//tv
 @end
 @implementation THFormTextCell
 - (instancetype)initWithFrame:(CGRect)frame cellModel:(THFormBaseM *)cellModel{
@@ -29,8 +30,8 @@
 - (void)initUI{
     if(self.model.isTextArea){
         [self addSubview:self.mainTV];
-//        self.mainTV.placeholder = [NSString stringWithFormat:@"请输入%@",self.model.title];
-//        self.mainTV.limitLength = self.model.limitLength;
+        self.mainTV.placeholder = [NSString stringWithFormat:@"请输入%@",self.model.title];
+        self.mainTV.limitLength = [self.model.limitLength integerValue];
         self.mainTF.userInteractionEnabled = !self.model.disable;
         [self.mainTV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(110.0);
@@ -43,6 +44,7 @@
         
         self.mainTF.keyboardType = self.model.keyboardType;
         self.mainTF.userInteractionEnabled = !self.model.disable;
+        self.mainTF.limitLength = self.model.limitLength;
         if(self.model.actionBlock){
             self.actionBlock = self.model.actionBlock;
         }else self.actionBlock = nil;
@@ -51,7 +53,6 @@
             self.mainTF.placeholder = [NSString stringWithFormat:@"请选择%@",self.model.title];
         }else self.mainTF.placeholder = [NSString stringWithFormat:@"请输入%@",self.model.title];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextChanged:) name:UITextFieldTextDidChangeNotification object:self.mainTF];
         [self.mainTF mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(110.0);
             make.right.equalTo(self).offset(-15);
@@ -71,9 +72,9 @@
     }
 }
 
-- (UITextField *)mainTF{
+- (THTextField *)mainTF{
     if(!_mainTF){
-        _mainTF                     = [[UITextField alloc]init];
+        _mainTF                     = [[THTextField alloc]init];
         _mainTF.font                = [UIFont systemFontOfSize:13];
         _mainTF.borderStyle         = UITextBorderStyleNone;
         _mainTF.clearButtonMode     = UITextFieldViewModeWhileEditing;
@@ -85,9 +86,9 @@
     }
     return _mainTF;
 }
-- (UITextView *)mainTV{
+- (THTextView *)mainTV{
     if(!_mainTV){
-        _mainTV                     = [[UITextView alloc]init];
+        _mainTV                     = [[THTextView alloc]init];
         _mainTV.frame               = CGRectMake(110, 13, THScreenWidth-110-15, 68);
         _mainTV.font                = [UIFont systemFontOfSize:13];
         _mainTV.backgroundColor     = [UIColor groupTableViewBackgroundColor];
@@ -111,38 +112,8 @@
 }
 
 - (void)textFieldValueChanged:(UITextField *)sender{
-//    if(self.valueChanged){
-//        NSString *value = (self.openRange)?format(@"%@,%@",self.mainTF.text,self.secondTF.text):self.mainTF.text;
-//        self.valueChanged(value, self.identifier);
-//    }
-    
     //赋值给model
     self.model.value = self.mainTF.text;
-}
-
-- (void)textFieldTextChanged:(NSNotification *)notification {
-    if (!self.model.limitLength) {//字数限制
-        return;
-    }
-    NSString *keyboardType = self.textInputMode.primaryLanguage;
-    if ([keyboardType isEqualToString:@"zh-Hans"]) {//对简体中文做特殊处理>>>>高亮拼写问题
-        UITextRange *range = self.mainTF.markedTextRange;
-        if (!range) {
-            if (self.mainTF.text.length > [self.model.limitLength intValue]) {
-                self.mainTF.text = [self.mainTF.text substringToIndex:[self.model.limitLength intValue]];
-                NSLog(@"已经是最大字数");
-            }else {/*有高亮不做限制*/}
-        }
-    }else {
-        if ([self.mainTF.text length] > [self.model.limitLength intValue]) {
-            self.mainTF.text = [self.mainTF.text substringToIndex:[self.model.limitLength intValue]];
-            NSLog(@"已经是最大字数");
-        }
-    }
-}
-
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self.mainTF];
 }
 
 @end

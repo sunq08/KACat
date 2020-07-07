@@ -20,8 +20,7 @@ static const CGFloat THMSGTitleW   = 72.0;//标题宽度
 @implementation THMessageView
 
 + (instancetype)messageViewType:(THMessageViewType)messageViewType{
-    THMessageView *view = [[THMessageView alloc]initWithFrame:CGRectZero type:messageViewType];
-    return view;
+    return [[self alloc]initWithFrame:CGRectZero type:messageViewType];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame type:(THMessageViewType)messageViewType{

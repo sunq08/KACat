@@ -9,24 +9,17 @@
 #import "BillAddViewController.h"
 #import "SelectClassViewController.h"
 #import "HYCalendarView.h"
-
 #import "BillM.h"
 #import "ClassM.h"
 #import "AccountM.h"
 
-#import "UITextFieldPicker.h"
-#import "FSTextView.h"
-
 @interface BillAddViewController ()
-
 @property (nonatomic, weak) UISegmentedControl *segment;
-
 @property (weak, nonatomic) IBOutlet UITextField *amountTF;
 @property (weak, nonatomic) IBOutlet UITextField *classNameTF;
-@property (weak, nonatomic) IBOutlet UITextFieldPicker *accountNameTF;
+@property (weak, nonatomic) IBOutlet THTextFieldPicker *accountNameTF;
 @property (weak, nonatomic) IBOutlet UITextField *timeTF;
-@property (weak, nonatomic) IBOutlet FSTextView *remarkTV;
-
+@property (weak, nonatomic) IBOutlet THTextView *remarkTV;
 @property (assign, nonatomic) BOOL isAdd;
 
 @end
@@ -57,13 +50,11 @@
 
 - (void)loadData{
     NSArray *accounts = [[DataBase sharedDataBase] getAllAccountM];
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:0];
+    NSMutableArray *pickerData = [NSMutableArray arrayWithCapacity:0];
     for (AccountM *model in accounts) {
-        [dict setObject:model.name forKey:[NSString stringWithFormat:@"%ld",model.pkid]];
+        [pickerData addObject:@{format(@"%ld",model.pkid):model.name}];
     }
-    [self.accountNameTF setPickerData:dict];
-    
-    [self.accountNameTF setVal:[dict allKeys][0]];
+    [self.accountNameTF setPickerData:pickerData];
     
     if(!self.billM){
         self.billM = [[BillM alloc]init];

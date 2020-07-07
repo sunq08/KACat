@@ -41,7 +41,7 @@
 }
 - (THTextFieldPicker *)mainPicker{
     if(!_mainPicker){
-        _mainPicker                 = [THTextFieldPicker creatTextFiledWithStyle:THTextFiledTimePicker];
+        _mainPicker                 = [THTextFieldPicker textFiledPickerWithStyle:THTextFiledTimePicker];
         _mainPicker.font            = [UIFont systemFontOfSize:13];
         _mainPicker.borderStyle     = UITextBorderStyleNone;
         _mainPicker.backgroundColor = [UIColor whiteColor];

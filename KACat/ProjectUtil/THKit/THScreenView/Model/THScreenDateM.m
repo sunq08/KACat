@@ -9,6 +9,14 @@
 #import "THScreenDateM.h"
 
 @implementation THScreenDateM
+- (instancetype)initWithIdentifier:(NSString *)identifier title:(NSString *)title{
+    self = [super initWithIdentifier:identifier title:title];
+    if (self) {
+        self.format                 = @"YYYY-MM-DD HH:mm:ss";
+    }
+    return self;
+}
+
 - (NSString *)cellClass{
     return @"THScreenDateCell";
 }
@@ -19,20 +27,10 @@
     NSString *identifier = (self.identifier)?self.identifier:@"";
     NSArray *identifiers = [identifier componentsSeparatedByString:@","];
     
-    if(!self.openFormat && !self.openRange){//单个选择时间
+    if(!self.openRange){//单个选择时间
         return @{self.identifier:value};
     }
-    if(self.openFormat && !self.openRange){//开启自定义&&选择单个时间
-        if(identifiers.count<2){
-            NSLog(@"identifiers命名错误，请使用xxxx,xxxx命名");
-            return @{self.identifier:@""};
-        }else{
-            NSString *start = values[0];
-            NSString *type = (values.count>1)?values[1]:@"";
-            return @{identifiers[0]:start,identifiers[1]:type};
-        }
-    }
-    if(!self.openFormat && self.openRange){//未开启自定义&&选择时间范围
+    if(self.openRange){//未开启自定义&&选择时间范围
         if(identifiers.count<2){
             NSLog(@"identifiers命名错误，请使用xxxx,xxxx命名");
             return @{self.identifier:@""};
@@ -40,17 +38,6 @@
             NSString *start = values[0];
             NSString *end = (values.count>1)?values[1]:@"";
             return @{identifiers[0]:start,identifiers[1]:end};
-        }
-    }
-    if(self.openFormat && self.openRange){//开启自定义&&选择时间范围
-        if(identifiers.count<3){
-            NSLog(@"identifiers命名错误，请使用xxxx,xxxx,xxxx命名");
-            return @{self.identifier:@""};
-        }else{
-            NSString *start = values[0];
-            NSString *end = (values.count>1)?values[1]:@"";
-            NSString *type = (values.count>2)?values[2]:@"";
-            return @{identifiers[0]:start,identifiers[1]:end,identifiers[2]:type};
         }
     }
     return @{};

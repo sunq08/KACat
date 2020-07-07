@@ -15,7 +15,7 @@ typedef enum THTextFiledPickerStyle {
 }THTextFiledPickerStyle;
 @interface THTextFieldPicker : UITextField
 /** 快捷创建picker*/
-+ (instancetype)creatTextFiledWithStyle:(THTextFiledPickerStyle)style;
++ (instancetype)textFiledPickerWithStyle:(THTextFiledPickerStyle)style;
 /** 数据源*/
 @property (nonatomic, strong) NSMutableArray<NSDictionary *>  *pickerData;
 /** 取值*/

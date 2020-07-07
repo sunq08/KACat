@@ -8,7 +8,6 @@
 
 #import "AccountAddTypeViewController.h"
  
-#import "FSTextView.h"
 #import "AccountM.h"
 #import <FMDB/FMDB.h>
 @interface AccountAddTypeViewController ()<THFormViewDelegate>

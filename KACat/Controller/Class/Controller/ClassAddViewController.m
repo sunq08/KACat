@@ -108,11 +108,7 @@
     
     UIBarButtonItem *addBtn = [[UIBarButtonItem alloc]initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(saveClick)];
     self.navigationItem.rightBarButtonItem = addBtn;
-    
-    [self.nameTF setValue:@10 forKey:@"LimitInput"];
-    
-    
-    
+
 }
 
 - (void)saveClick{
